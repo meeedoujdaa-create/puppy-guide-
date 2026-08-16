@@ -233,8 +233,8 @@
                 </div>
             </div>
 
-            <!-- BUTTON CALLS LOCKER DIRECTLY -->
-            <button class="cta-button" onclick="_callLocker();">
+            <!-- DIRECT CALL TO ADBLUEMEDIA LOCKER -->
+            <button class="cta-button" onclick="_call();">
                 <span class="pdf-icon-badge">PDF</span>
                 CLAIM YOUR FREE GUIDE ➔
             </button>
@@ -250,18 +250,6 @@
             <div class="privacy-note">🔒 Your information is secure and will never be shared.</div>
         </div>
     </div>
-
-    <script type="text/javascript">
-        function _callLocker() {
-            if (typeof _call === 'function') {
-                _call();
-            } else if (typeof _ogm === 'function') {
-                _ogm();
-            } else {
-                alert('اللوكر يعمل فقط بعد رفع الملف على استضافة موقع (Domain/HTTPS) بسبب سياسة الأمان الخاصة بـ AdBlueMedia.');
-            }
-        }
-    </script>
 
 </body>
 </html>
